@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1yu+4-7yj3ieek*gnas6b1%pc^_pzv=qsy_7i+6$25-le!e$0f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
@@ -47,10 +47,10 @@ INSTALLED_APPS = [
 ]
 
 TAILWIND_APP_NAME = 'theme'
+
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,6 +132,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
