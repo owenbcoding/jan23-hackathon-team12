@@ -6,12 +6,32 @@ This interactive web application is designed to help the user save money through
 
 Clicking the 'login' button will prompt the user to enter their credentials (username and password) and pass through a two-factor authentication before arriving to their personal dashboard. There they will be able to view previous transactions, view the account balance and toggle between categorized piggy banks. 
 
-## Discuss w team, hackathon readme template, CHANGE INFO BELOW
+
+<h2 text-align="center"><img src="XX" alt="App homepage"></h2>
+
+## Target Audience
+
+Piggy Bank is designed for users with access to a bank account who want to save money after each transaction. Adults and children alike can interact with this easy-to-use application and track their savings through one or more accounts.
 
 
-<h2 text-align="center"><img src="ADD PIC OF APP"></h2>
+# User Experience (UX)
+## User Stories
+Four categories of User Stories were used to plan the implementation of various features for the Piggy Bank App. They were prioritized as: "Must Have", "Should Have", "Could Have" and "Won't Have". 
 
-## User Experience (UX)
+All categories of User Stories were included in the fnial deployment of this version of the Piggy Bank Application, barring those labeled "Won't Have". They were not prioritized during the creation and deployment of this version of the app but may be included as future features.
+
+The image below shows a template to create User Stories that will include the name of the Story, a brief descritpion, its title, one of four labels and what team member the Story is assigned to. 
+
+
+<img src="./media/user-story-template.png" alt="User Story Template">
+
+The User Stories included in this edition of the app are:
+
+|User Story |Image of the User Story completed|Label|
+|-----------------------|---------------------------------|-----------
+|[#1](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/1) Create a new account| ![Create new account](/picture)|Must Have||
+
+<div style="color:red;font-size:30px">
 
 -   ### User stories
 
