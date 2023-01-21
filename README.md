@@ -63,7 +63,9 @@ The User Stories included in this edition of the app are:
 |[#10](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/10) Two-factor authentication| ![Two-factor authentic](/picture)|Must Have||
 |[#11](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/11) Home page | ![Home page](/picture)|Must Have||
 |[#12](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/12) Login | ![Login](/picture)|Must Have||
-|[#13](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/13) Separate deposits and withdrawals | ![Separate deposits from withdrawals](/picture)|Must Have||
+|[#13](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/13) Separate deposits and withdrawals | ![Separate deposits from withdrawals](/picture)|Could Have||
+|[#14](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/14) Automate payments| ![Automate payments](/picture)|Won't Have||
+|[#15](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/15) Mobile app at ATM | ![ATM mobile app](/picture)|Won't Have||
 
 ## Technology:
 ​
