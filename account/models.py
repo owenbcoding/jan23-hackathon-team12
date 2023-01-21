@@ -12,6 +12,13 @@ class Account(models.Model):
         """
         verbose_name_plural = 'Accounts'
     
+    # user_id = models.ForeignKey(Profile,on_delete=models.CASCADE)
+    name = models.CharField(max_length=250)
+    bank = models.CharField(max_length=250)
+    amount = models.FloatField()
+    open_date = models.DateTimeField(auto_now=False, auto_now_add=True)
+    update_date = models.DateTimeField(auto_now=True, auto_now_add=False)
+    
     def __str__(self):
         return str(self.name)
 
