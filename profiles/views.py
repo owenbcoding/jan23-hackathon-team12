@@ -10,11 +10,6 @@ from .forms import ProfileForm
 
 
 def profile_(request):
-    """ Display the user's profile. """
-    form = ProfileForm()
-    context = {
-        'form': form
-    }
-    return render(request, )
 
+    return render(request, 'profile.html')
 
