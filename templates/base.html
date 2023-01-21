@@ -128,7 +128,7 @@
               <div class="mt-6">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <a href="{% url 'account_login' %}" class="text-gray-900">My Profile</a>
+                <a href="{% url 'profile' %}" class="text-gray-900">My Profile</a>
                 <a href="{% url 'account_logout' %}" class="text-gray-900">Logout</a>
                 {% else %}
                 <a href="{% url 'account_signup' %}" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
