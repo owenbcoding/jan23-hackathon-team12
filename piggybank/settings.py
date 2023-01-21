@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'home',
-    'account',
+    'piggyaccount',
     'django_browser_reload',
     'allauth',
     'allauth.account',
