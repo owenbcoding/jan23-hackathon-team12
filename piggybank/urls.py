@@ -10,16 +10,6 @@ from django.contrib.admin.views.decorators import staff_member_required
 from allauth_2fa.middleware import BaseRequire2FAMiddleware
 
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('home.urls')),
-    path("__reload__/", include("django_browser_reload.urls")),
-    # Include the allauth and 2FA urls from their respective packages.
-    path('accounts/', include('allauth_2fa.urls')),
-    path('accounts/', include('allauth.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
 # Ensure users go through the allauth workflow when logging into admin.
 admin.site.login = staff_member_required(admin.site.login, login_url='/accounts/login')
 # Run the standard admin set-up.
@@ -32,6 +22,17 @@ class OTPAdmin(OTPAdminSite):
 admin_site = OTPAdmin(name='OTPAdmin')
 admin_site.register(User)
 admin_site.register(TOTPDevice, TOTPDeviceAdmin)
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('home.urls')),
+    path('', include('profiles.urls')),
+    path("__reload__/", include("django_browser_reload.urls")),
+    # Include the allauth and 2FA urls from their respective packages.
+    path('accounts/', include('allauth_2fa.urls')),
+    path('accounts/', include('allauth.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 class RequireSuperuser2FAMiddleware(BaseRequire2FAMiddleware):

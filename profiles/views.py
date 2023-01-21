@@ -9,14 +9,12 @@ from .models import Profile
 from .forms import ProfileForm
 
 
-def profile(request):
+def profile_(request):
     """ Display the user's profile. """
-    profile_all = Profile.objects.all()
     form = ProfileForm()
     context = {
-        'profile_all': profile_all,
         'form': form
     }
-    return render(request, 'profile.html', context)
+    return render(request, )
 
 

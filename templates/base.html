@@ -41,9 +41,16 @@
             <a href="{% url 'contact' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact US</a>
           </nav>
           <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-            <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'profile' %}">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Logout</a>
           </div>
+          {% else %}
+          <a href="{% url 'account_signup' %}">Register</a>
+          <a href="{% url 'account_login' %}">Login</a>
+          {% endif %}
+          {% endif %}
         </div>
         <!--
           Mobile menu, show/hide based on mobile menu state.
