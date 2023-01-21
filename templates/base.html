@@ -12,9 +12,9 @@
   </head>
 <body>
   {% tailwind_css %}
-  <div class="bg-white">
+  <div class="bg-gray-100">
     <header>
-      <div class="relative bg-white">
+      <div class="relative">
         <div class="mx-auto flex max-w-7xl items-center justify-between py-6 px-6 md:justify-start md:space-x-10 lg:px-8">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
@@ -32,20 +32,19 @@
             </button>
           </div>
           <nav class="hidden space-x-10 md:flex">
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
+            <a href="{% url 'index' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
   
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
+            <a href="{% url 'about' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
 
-            <a href="{% url 'account' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+            <a href="{% url 'team' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">The Team</a>
   
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
+            <a href="{% url 'contact' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact US</a>
           </nav>
           <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
             <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
           </div>
         </div>
-  
         <!--
           Mobile menu, show/hide based on mobile menu state.
   
@@ -75,7 +74,7 @@
               </div>
               <div class="mt-6">
                 <nav class="grid grid-cols-1 gap-7">
-                  <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                  <a href="{% url 'index' %}" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white">
                       <!-- Heroicon name: outline/inbox -->
                       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -85,7 +84,7 @@
                     <div class="ml-4 text-base font-medium text-gray-900">Home</div>
                   </a>
   
-                  <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                  <a href="{% url 'about' %}" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white">
                       <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
                       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -95,17 +94,17 @@
                     <div class="ml-4 text-base font-medium text-gray-900">About</div>
                   </a>
 
-                  <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                  <a href="{% url 'team' %}" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white">
                       <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
                       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                       </svg>
                     </div>
-                    <div class="ml-4 text-base font-medium text-gray-900">Pricing</div>
+                    <div class="ml-4 text-base font-medium text-gray-900">The Team</div>
                   </a>
   
-                  <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                  <a href="{% url 'contact' %}" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white">
                       <!-- Heroicon name: outline/chat-bubble-left-right -->
                       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -118,15 +117,6 @@
               </div>
             </div>
             <div class="py-6 px-5">
-              <div class="grid grid-cols-2 gap-4">
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
-  
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
-
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
-      
-                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
-              </div>
               <div class="mt-6">
                 <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
                 <p class="mt-6 text-center text-base font-medium text-gray-500">
@@ -140,38 +130,6 @@
       </div>
     </header>
   
-    <main>
-      <div>
-        <!-- Hero card -->
-        <div class="relative">
-          <div class="absolute inset-x-0 bottom-0 h-full bg-gray-100"></div>
-          <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-              <div class="absolute inset-0">
-                <img class="h-full w-full object-cover" src="media/piggy-bank.jpg" alt="logo">
-
-              </div>
-              <div class="relative py-16 px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                  <span class="block text-white">Piggy Bank</span>
-                  <span class="block text-indigo-200 mt-5">A Safe Way to Save</span>
-                </h1>
-                <p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                  <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">Get started</a>
-                    <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Live demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- More main page content here... -->
-    </main>
-  </div>
     {% block page_header %}
       
     {% endblock %}
@@ -179,8 +137,36 @@
     {% block content %}
 
     {% endblock %}
-    <footer>
-    </footer>
+    <footer class="bg-gray-100">
+      <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
+        <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+          <div class="pb-6">
+            <a href="{% url 'index' %}" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Home</a>
+          </div>
+    
+          <div class="pb-6">
+            <a href="{% url 'about' %}" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+          </div>
+    
+          <div class="pb-6">
+            <a href="{% url 'team' %}" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Team</a>
+          </div>
+    
+          <div class="pb-6">
+            <a href="{% url 'contact' %}" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Contact</a>
+          </div>
+        </nav>
+        <div class="mt-10 flex justify-center space-x-10">
+          <a href="https://github.com/owenbcoding/jan23-hackathon-team12" target="_blank" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 Piggy Bank, Inc. All rights reserved.</p>
+      </div>
+    </footer>    
 </body>
 <footer>
 </footer>
