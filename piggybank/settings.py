@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'home',
+    'account',
     'django_browser_reload',
 ]
 
