@@ -58,7 +58,13 @@ The User Stories included in this edition of the app are:
 |[#5](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/5) Contact customer service| ![Contacting customer service](/picture)|Should Have||
 |[#6](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/6) Terms and Conditions| ![Terms and conditions](/picture)|Must Have||
 |[#7](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/7) Direct debit| ![Direct debit](/picture)|Could Have||
-​
+|[#8](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/8) Make deposits using (the test version of) Stripe| ![Deposit using Stripe](/picture)|Must Have||
+|[#9](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/9) Footer with professional links| ![Footer with professional links](/picture)|Must Have||
+|[#10](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/10) Two-factor authentication| ![Two-factor authentic](/picture)|Must Have||
+|[#11](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/11) Home page | ![Home page](/picture)|Must Have||
+|[#12](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/12) Login | ![Login](/picture)|Must Have||
+|[#13](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/13) Separate deposits and withdrawals | ![Separate deposits from withdrawals](/picture)|Must Have||
+
 ## Technology:
 ​
 << Detail your techstack here, and why you chose it. >>
