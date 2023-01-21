@@ -12,3 +12,9 @@ def wallet(request):
     """ wallet view, returns the account.html """
 
     return render(request, 'account/wallet.html')
+
+
+def category(request):
+    """ category view, returns the account.html """
+
+    return render(request, 'account/category.html')

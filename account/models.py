@@ -67,7 +67,10 @@ class Category(models.Model):
         the Django defaults
         """
         verbose_name_plural = 'Categories'
-
+    
+    title = models.CharField(max_length=250, null=True, blank=True,)
+    description = models.TextField(max_length=250, null=True, blank=True,)
+    # user_id = models.ForeignKey('Profile',on_delete=models.CASCADE)
     
     def __str__(self):
         return str(self.name)
