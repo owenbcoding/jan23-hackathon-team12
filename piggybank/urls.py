@@ -28,6 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('', include('profiles.urls')),
+    path('account/', include('account.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
     # Include the allauth and 2FA urls from their respective packages.
     path('accounts/', include('allauth_2fa.urls')),
