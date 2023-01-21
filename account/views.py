@@ -18,3 +18,9 @@ def category(request):
     """ category view, returns the account.html """
 
     return render(request, 'account/category.html')
+
+
+def transaction(request):
+    """ transaction view, returns the account.html """
+
+    return render(request, 'account/transaction.html')

@@ -54,6 +54,13 @@ class Transaction(models.Model):
         """
         verbose_name_plural = 'Transactions'
     
+    transaction_type = models.CharField(max_length=250, null=True, blank=True,)
+    from_account = models.CharField(max_length=250, null=True, blank=True,)
+    to_account = models.CharField(max_length=250, null=True, blank=True,)
+    amount = models.FloatField(null=True, blank=True)
+    create_date = models.DateTimeField(auto_now=False, auto_now_add=True, null=True, blank=True)
+    note = models.TextField(max_length=250, null=True, blank=True,)
+    
     def __str__(self):
         return str(self.name)
 
