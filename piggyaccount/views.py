@@ -2,22 +2,22 @@
 from django.shortcuts import render
 
 
-def account(request):
+def piggyaccount(request):
     """ account view, returns the account.html """
 
-    return render(request, 'account/account.html')
+    return render(request, 'piggyaccount/account.html')
 
 
 def wallet(request):
     """ wallet view, returns the account.html """
 
-    return render(request, 'account/wallet.html')
+    return render(request, 'piggyaccount/wallet.html')
 
 
 def category(request):
     """ category view, returns the account.html """
 
-    return render(request, 'account/category.html')
+    return render(request, 'piggyaccount/category.html')
 
 
 def transaction(request):
