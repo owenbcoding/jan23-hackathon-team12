@@ -3,11 +3,11 @@ from django import forms
 from .models import Profile
 
 
-class ProfileForm(forms.ModelForm):
+class UserProfileForm(forms.ModelForm):
     """ A form to be presenting information based on Profile model """
     class Meta:
         model = Profile
-        fields = ('name', 'phone_number', 'email')
+        fields = ('phone_number', 'email')
 
     def __init__(self, *args, **kwargs):
         """
@@ -16,7 +16,7 @@ class ProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'name': 'Name',
+            # 'name': 'Name',
             'phone_number': 'Phone Number',
             'email': 'Email',
         }

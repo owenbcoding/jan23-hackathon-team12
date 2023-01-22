@@ -1,5 +1,6 @@
 ''' Models for account app '''
 from django.db import models
+from profiles.models import Profile
 
 
 class Account(models.Model):
@@ -12,10 +13,10 @@ class Account(models.Model):
         """
         verbose_name_plural = 'Accounts'
     
-    # user_id = models.ForeignKey(Profile,on_delete=models.CASCADE)
+    user_id = models.ForeignKey(Profile, on_delete=models.CASCADE,null=True, blank=True)
     name = models.CharField(max_length=250)
     bank = models.CharField(max_length=250)
-    amount = models.FloatField()
+    abalance = models.FloatField()
     open_date = models.DateTimeField(auto_now=False, auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True, auto_now_add=False)
     
@@ -36,7 +37,7 @@ class Wallet(models.Model):
     account_id = models.ForeignKey('Account',null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=250, null=True, blank=True)
     category_id = models.ForeignKey('Category', null=True, blank=True, on_delete=models.CASCADE)
-    amount = models.FloatField(null=True, blank=True)
+    wbalance = models.FloatField(null=True, blank=True)
     open_date = models.DateTimeField(auto_now=False, auto_now_add=True, null=True, blank=True)
     update_date = models.DateTimeField(auto_now=True, auto_now_add=False, null=True, blank=True)
     
@@ -54,12 +55,12 @@ class Transaction(models.Model):
         """
         verbose_name_plural = 'Transactions'
     
-    transaction_type = models.CharField(max_length=250, null=True, blank=True,)
-    from_account = models.CharField(max_length=250, null=True, blank=True,)
-    to_account = models.CharField(max_length=250, null=True, blank=True,)
+    transaction_type = models.CharField(max_length=250, null=True, blank=True)
+    from_account = models.CharField(max_length=250, null=True, blank=True)
+    to_account = models.CharField(max_length=250, null=True, blank=True)
     amount = models.FloatField(null=True, blank=True)
     create_date = models.DateTimeField(auto_now=False, auto_now_add=True, null=True, blank=True)
-    note = models.TextField(max_length=250, null=True, blank=True,)
+    note = models.TextField(max_length=250, null=True, blank=True)
     
     def __str__(self):
         return str(self.name)
@@ -75,9 +76,9 @@ class Category(models.Model):
         """
         verbose_name_plural = 'Categories'
     
-    title = models.CharField(max_length=250, null=True, blank=True,)
-    description = models.TextField(max_length=250, null=True, blank=True,)
-    # user_id = models.ForeignKey('Profile',on_delete=models.CASCADE)
+    title = models.CharField(max_length=250, null=True, blank=True)
+    description = models.TextField(max_length=250, null=True, blank=True)
+    user_id = models.ForeignKey(Profile,on_delete=models.CASCADE, null=True, blank=True)
     
     def __str__(self):
         return str(self.name)

@@ -2,7 +2,16 @@
 {% load static %}
 
 {% block content %}
+<!-- Page name -->
     <h1 class="text-red-600">Account page</h1>
-    {{ account }}
+<!-- Form to test account model -->
+    <form method="POST" >
+
+        {% csrf_token %}
+        {{ form }}
+
+        <button type="submit">Create Account</button>
+    </form>
+<!-- Link to test Wallet page -->
     <a href="{% url 'wallet' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Wallet</a>
 {% endblock %}
