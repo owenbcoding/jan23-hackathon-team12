@@ -70,16 +70,25 @@ The User Stories included in this edition of the app are:
 |[#17](https://github.com/Kaylaesmith1/jan23-hackathon-team12/issues/17) Navigation bar| ![Nav bar](./media/nav-bar.png)|Must Have||
 
 ## Technology:
+​Our team combined a few different languages and web tools to create the Piggy Bank application. A list of those included in the project are below.
+
+*  Languages:
+	* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+   * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 ​
-<< Detail your techstack here, and why you chose it. >>
-​
-<< list your languages & tools below: >>
-​
-*  << languages >>
-	* << list the langauge & reason for using it >>
-​
-* << tools >>
-  * << list the tool & reason for using it >>
+* Tools
+  * [Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
+    - Tailwind CSS was used to improve the responsiveness and styling of the application.
+  * [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create wireframes during the initial design process.
+  * [Django:](https://www.djangoproject.com/)
+    - The Django framework was used to quickly and seamlessly develop our app. It [integrates easily with Tailwind CSS](https://www.section.io/engineering-education/how-to-integrate-django-tailwind-styling-in-an-application/), which was an important aspect of this project.
+  * [Git](https://git-scm.com/)
+    - Git was used along with the [Gitpod](https://www.gitpod.io/) terminal for each team member to commit and push their work into the global staging branch of the app on GitHub. This helped with version control and to avoid branch develoment issues.
+  * [GitHub:](https://github.com/)
+    - GitHub was used to save versions of the code for the entire project after each branch was pushed from Git. There, the scrum master dealt with pull requests from team members and merged the branches.
 ​
 ## Initial MVP idea:
 ​
@@ -101,21 +110,21 @@ Our team decided on a royal blue color scheme with gray / silver accents to make
 ​<img src="./media/color-palette.png" alt="Color palette of blues and grays">
 
 ### Typography:
-<< what font pairings did your team consider and pick? And why? >>
-<p style="color:red;font-size:18px;">Discuss w team</p>
-
+As per this month's Hackathon requirements of branching out from Bootstrap, we chose to implement Tailwind CSS into Piggy Bank. We then decided to stick with the default font style. It's a clear, bold font that's easily legible in various sizes on our pages.
 
 ### Imagery:
 In the top, left corner of each page, a small piggy bank icon is shown. Clicking it will direct the user back to the home page.
 
-​<img src="./media/favicon2.png" alt="White piggy bank icon with white dollar sign in a blue circular background">
+​<img src="./media/logo.png" alt="White piggy bank icon with white dollar sign in a blue circular background">
 
 To illustrate the Home Page, we used an image of a golden piggy bank with stacks of $100 bills next to it. The two buttons, 'Get Started' and 'Live Demo' are laid over the image along with the words, "Piggy Bank a safe way to save".
 
 ​<img src="./media/piggy-bank.jpg" alt="Golden piggy bank next to stacks of $100 bills">
+
+We created a custom color palette using various shades of royal blue and grey, which made the gold accents on our pages pop. To do this, we used the [Coolers website](https://coolors.co/7681e2-6366f1-4337c9-374151-6b7280) and tweaked the colors by adjusting the hex codes to create the [custom template](https://coolors.co/7681e2-6366f1-4337c9-374151-6b7280), also shown in the 'Color Scheme' section above.
 ​
 << ensure source attribution is maintained, and that you have used copyright free material >>
-<p style="color:red;font-size:22px;">Discuss w team</p>
+
 ​
 
 ### Wireframes:
@@ -148,6 +157,10 @@ If a user wishes to sign up to use Piggy Bank, they can click on the 'Sign up' b
 
 ​<img src="./media/create-account-wireframe.png" alt="A wireframe showing a sign up form to create an account with Piggy Bank.">
 
+The user's dashboard page will show the account information for that user, as an indivitual or as a group (family / corporate user) and lists the categories of savings. Clicking the 'create new wallet' button will allow the user to create their wallet.
+
+​<img src="./media/dashboard-wireframe.png" alt="About the team wireframe">
+
 The About the Team page shows a picture of the six team members, their names and icons that link to their professional pages (GitHub and LinkedIn).
 
 ​<img src="./media/team-page.png" alt="About the team wireframe">
@@ -164,8 +177,6 @@ The About the Team page shows a picture of the six team members, their names and
 
 ### Code
 << any and all code that isn't yours...must go here >>
-<p style="color:red;font-size:26px;">Team, did we use any code snippets?</p>
-
 ​
 ### Content
 To get an idea of pertinent User Stories for a savings app, we started by using a list of examples for the [UX on a mobile app](https://propelrr.com/blog/user-story-examples-fintech-apps#). From there we brainstormed other ways to improve the user experience and the Piggy Bank application itself.
@@ -179,5 +190,3 @@ To learn how the deposit, transfer and withdraw features would work for our appl
 We would like to acknowledge and thank each member of our team for great team work and participation during this hackathon. As is customary for hackathons, our team comprised individuals of different coding levels but each member was able to contribute to the final project and development of our Piggy Bank app.
 
 Thanks also to the hackteam and Code Institute. We appreciate your volunteering your time and expertise to help with any questions and clarifications we had throughout the project.
-
-<p style="color:red;font-size:26px;">Team, add anything else you'd like to this section, or let me know and I can add it!</p>
