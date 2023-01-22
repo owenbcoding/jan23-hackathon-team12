@@ -176,8 +176,15 @@ The About the Team page shows a picture of the six team members, their names and
 
 ## Testing
 
+### Manual Testing 
 
+- We underwent manual testing by creating fake users to test our product for all crud functionality.
 
+### Known Bugs: 
+
+- We had an account app and we had to rename it because we used allauth, which already has an account app. Therefore, the bug was that we had two apps with the same name. 
+    - To fix it, we renamed the account app "Piggyaccount" and reset the migrations. Specifically, we made a separate migration for the renamed app. 
+    - We also created a form to check if we can use the piggy bank models.
 
 ## Deployment
 
@@ -190,18 +197,6 @@ The project was deployed on Heroku using the following steps...
 2. Following this, each team member made their individual branches for developing the project. The projecct would then be developed until it was at a stage each team member was satisfied with, before being pushed to the main branch. 
 3. Towards the end of the project, each team member then set up their configuration variables for the staging part of the deployment in the env.py file. This allowed the team to connect it to heroku which was created in Owen's account.
 4. Finally, we tested everything on the staging branch before deploying the main branch for the project to be hosted on Heroku. 
-
-### Github Pages
-
-The project was deployed on Github Pages using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
