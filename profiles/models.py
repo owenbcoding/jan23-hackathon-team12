@@ -7,7 +7,7 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     """ A user profile model for mantaining users """
-    name = models.OneToOneField(User, on_delete=models.CASCADE)
+    name = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     phone_number = models.CharField(max_length=20,
                          null=True, blank=True)
     email = models.EmailField()
