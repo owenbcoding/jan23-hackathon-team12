@@ -761,6 +761,10 @@ select {
   z-index: 30;
 }
 
+.float-right {
+  float: right;
+}
+
 .-m-3 {
   margin: -0.75rem;
 }
@@ -827,12 +831,20 @@ select {
   margin-top: 6rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .-ml-96 {
   margin-left: -24rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -1105,6 +1117,10 @@ select {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
