@@ -178,11 +178,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     -   A white gap can be seen to the right of the footer and navigation bar as a result.
 -   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
 
+<div style="color:green;font-size:30px">
 ## Deployment
 
-### GitHub Pages
+### Elephant SQL and Heroku
 
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed on Heroku using the following steps...
+
+1. Firstly, we created an elephant SQL team, invited all members there on their platform and gave them access to see the SQL database. 
+    * As members, we made sure the project could run locally from each team member's gitpod first by installing django with tailwind and showing the team how to run it. 
+2. Following this, each team member made their individual branches for developing the project. The projecct would then be developed until it was at a stage each team member was satisfied with, before being pushed to the main branch. 
+3. Towards the end of the project, each team member then set up their configuration variables for the staging part of the deployment in the env.py file. This allowed the team to connect it to heroku which was created in Owen's account.
+4. Finally, we tested everything on the staging branch before deploying the main branch for the project to be hosted on Heroku. 
+
+### Github Pages
+
+The project was deployed on Heroku using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
@@ -198,7 +209,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+3. You should now have a copy of the original repository in your GitHub account. 
 
 ### Making a Local Clone
 
@@ -210,13 +221,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
