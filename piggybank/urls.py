@@ -19,6 +19,7 @@ admin.autodiscover()
 class OTPAdmin(OTPAdminSite):
     pass
 
+
 admin_site = OTPAdmin(name='OTPAdmin')
 admin_site.register(User)
 admin_site.register(TOTPDevice, TOTPDeviceAdmin)
@@ -26,13 +27,13 @@ admin_site.register(TOTPDevice, TOTPDeviceAdmin)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth_2fa.urls')),
     path('', include('home.urls')),
     path('', include('profiles.urls')),
     path('piggyaccount/', include('piggyaccount.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
     # Include the allauth and 2FA urls from their respective packages.
-    path('accounts/', include('allauth_2fa.urls')),
-    path('accounts/', include('allauth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
