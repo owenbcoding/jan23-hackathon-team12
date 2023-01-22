@@ -102,7 +102,15 @@ The User Stories included in this edition of the app are:
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 
+<div style="color:green;font-size:20px">
+
 ## Testing
+
+### Manual Testing
+
+In order to test our product for CRUD functionality (Create, Read, Update, and Delete), we created fake users to undergo manual testing. 
+
+<div style="color:red;font-size:30px">
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -178,7 +186,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     -   A white gap can be seen to the right of the footer and navigation bar as a result.
 -   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
 
-<div style="color:green;font-size:30px">
+<div style="color:green;font-size:20px">
 ## Deployment
 
 ### Elephant SQL and Heroku
@@ -237,6 +245,7 @@ $ git clone https://github.com/
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+<div style="color:red;font-size:30px">
 ## Credits
 
 ### Code
