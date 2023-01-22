@@ -302,9 +302,27 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ## Credits
 
 ### Code
-<< any and all code that isn't yours...must go here >>
-<p style="color:red;font-size:26px;">Team, did we use any code snippets?</p>
+- We used this code to assist in Django documentation
+    - https://docs.djangoproject.com/en/3.2/
 
+- We used the following code to assist us with allauth and allauth 2fa documentation
+    - https://django-allauth.readthedocs.io/en/latest/installation.html   
+    - https://django-allauth-2fa.readthedocs.io/en/latest/installation/
+
+- The following video regarding Django rest API helped inspire our use of API
+    - https://www.youtube.com/watch?v=cJveiktaOSQ
+
+- We used this video during the initial creation and brainstorming of the app
+    - https://www.youtube.com/watch?v=SrT9Wf_OFyw
+
+- We used this to gain inspiration for our initial Github repository
+    - https://github.com/somacode1/Build-a-Banking-System-API-with-DJANGO-Rest-Framework  
+
+- Stack Overflow assisted in solving the bug of not rendering the profile page
+    - https://stackoverflow.com/questions/33724344/how-can-i-display-a-user-profile-using-django
+
+- We used this video that helped install 2fa without allauth   
+    - https://tuts-station.com/django-two-factor-authentication-example.html
 ​
 ### Content
 To get an idea of pertinent User Stories for a savings app, we started by using a list of examples for the [UX on a mobile app](https://propelrr.com/blog/user-story-examples-fintech-apps#). From there we brainstormed other ways to improve the user experience and the Piggy Bank application itself.
