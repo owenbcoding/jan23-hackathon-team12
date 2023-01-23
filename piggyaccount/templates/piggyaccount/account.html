@@ -3,15 +3,46 @@
 
 {% block content %}
 <!-- Page name -->
-    <h1 class="text-red-600">Account page</h1>
+    <h1 class="text-red-600">{{ user.username }}'s Piggybank Account </h1>
+
+    <div class="flex">
+        <div class="element-center">
+          
+          <div id="acctBalance">
+              
+                  <span class="wrap"></span>
+              </a>
+              <h1>
+                Balance
+              </h1>
+              <label id="acctBalanceLbl"></label>
+          </div>
+      
+          <div id="inputs">
+              <h2>
+                  Deposit
+              </h2>
+              <input type="text" id="userDeposit" required>
+              <button id="btnDeposit">Deposit</button>
+      
+              <h2>
+                  Withdraw
+              </h2>
+              <input type="text" id="userWithdraw" required>
+              <button id="btnWithdraw">Withdraw</button>
+          </div>
+        </div>
+        </div>
+      
+
 <!-- Form to test account model -->
-    <form method="POST" >
+    <!-- <form method="POST" >
 
         {% csrf_token %}
         {{ form }}
 
         <button type="submit">Create Account</button>
-    </form>
+    </form> -->
 <!-- Link to test Wallet page -->
     <a href="{% url 'wallet' %}" class="text-base font-medium text-gray-500 hover:text-gray-900">Wallet</a>
 {% endblock %}
