@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load account %}
+{% load i18n %}
+
+
+{% load static tailwind_tags %}
+
+<head>
+    <title>Piggy Bank {% block extra_title %} My Profile {% endblock %}</title>
+
+</head>
+
+{% block content %}
+  <main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+      <!-- Replace with your content -->
+      <div class="px-4 py-6 sm:px-0">
+        <div class="h-96 rounded-lg border-4 border-dashed border-gray-200">
+            <header class="bg-white shadow">
+                <div class="mx-auto bg-gray-100">
+                  <h1 class="text-3xl font-bold tracking-tight text-gray-900">Piggy bank - Dashboard</h1>
+                </div>
+            </header>
+            <h2 class="mt-10">Profile page</h2>
+            {% user_display user as username %}
+            <h2>User - {{user.username|title}}</h2>
+        </div>
+      </div>
+      <!-- /End replace -->
+    </div>
+  </main>
+
+{% endblock %}
+<hr>
