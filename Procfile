@@ -1,0 +1,1 @@
+web gunicorn piggy-bank.wsgi:application
