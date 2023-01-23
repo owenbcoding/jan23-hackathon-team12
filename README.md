@@ -100,6 +100,8 @@ The User Stories included in this edition of the app are:
     - Git was used along with the [Gitpod](https://www.gitpod.io/) terminal for each team member to commit and push their work into the global staging branch of the app on GitHub. This helped with version control and to avoid branch develoment issues.
   * [GitHub:](https://github.com/)
     - GitHub was used to save versions of the code for the entire project after each branch was pushed from Git. There, the scrum master dealt with pull requests from team members and merged the branches.
+  * [Lucid](hhttps://lucid.co/?_ga=2.118270986.2040667285.1674443247-1479747460.1674151709&_gl=1*1phqf1x*_ga*MTQ3OTc0NzQ2MC4xNjc0MTUxNzA5*_ga_MPV5H3XMB5*MTY3NDQ0MzI0Ni4yLjAuMTY3NDQ0MzI0Ni42MC4wLjA.)
+    - Lucid was used to design transaction models for deposits, withdrawals and wallet categories.
 ​
 ## Initial MVP idea:
 ​
@@ -131,13 +133,15 @@ To illustrate the Home Page, we used an image of a golden piggy bank with stacks
 ​<img src="./media/piggy-bank.jpg" alt="Golden piggy bank next to stacks of $100 bills">
 
 We created a custom color palette using various shades of royal blue and grey, which made the gold accents on our pages pop. To do this, we used the [Coolers website](https://coolors.co/7681e2-6366f1-4337c9-374151-6b7280) and tweaked the colors by adjusting the hex codes to create the [custom template](https://coolors.co/7681e2-6366f1-4337c9-374151-6b7280), also shown in the 'Color Scheme' section above.
-​
-<< ensure source attribution is maintained, and that you have used copyright free material >>
 
+We designed models (see below) using [Lucid](https://lucid.co/?_ga=2.118270986.2040667285.1674443247-1479747460.1674151709&_gl=1*1phqf1x*_ga*MTQ3OTc0NzQ2MC4xNjc0MTUxNzA5*_ga_MPV5H3XMB5*MTY3NDQ0MzI0Ni4yLjAuMTY3NDQ0MzI0Ni42MC4wLjA.) to show the user's profile information, wallet category models, account and transaction information. 
+
+​<img src="./media/lucid-diagram.png" alt="Lucid diagram of models for Piggy Bank">
 ​
+
 
 ### Wireframes:
-​
+
 <details>
 <summary>- Mobile Wireframes:</summary>
 All pages of the Piggy Bank app will have a navigation bar complete with the Piggy Bank logo and clicable links for: Home, About, The Team and Contact Us. A footer is also on each page with the same links.
