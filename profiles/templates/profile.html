@@ -12,27 +12,24 @@
 </head>
 
 {% block content %}
+  <main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+      <!-- Replace with your content -->
+      <div class="px-4 py-6 sm:px-0">
+        <div class="h-96 rounded-lg border-4 border-dashed border-gray-200">
+            <header class="bg-white shadow">
+                <div class="mx-auto bg-gray-100">
+                  <h1 class="text-3xl font-bold tracking-tight text-gray-900">Piggy bank - Dashboard</h1>
+                </div>
+            </header>
+            <h2 class="mt-10">Profile page</h2>
+            {% user_display user as username %}
+            <h2>User - {{user.username|title}}</h2>
+        </div>
+      </div>
+      <!-- /End replace -->
+    </div>
+  </main>
 
-
-Profile page
-{% user_display user as username %}
-<h2>My Profile - {{user.username|title}}</h2>
-
-<!-- new form -->
-<form method="POST" class="mb-5 reservation-enquiry full-form">
-
-    {% csrf_token %}
-    {{ form }}
-
-    <button type="submit" class="button mt-4 text-center submit-button">Create Account</button>
-</form>
-
-<!--  -->
-
-<!-- <form class="mt-3 w-75" action="#" method="POST" id="profile-update-form">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn rounded text-uppercase float-right btn__update_rev">Update Information</button>
-</form> -->
 {% endblock %}
 <hr>
