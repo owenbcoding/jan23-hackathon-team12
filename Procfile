@@ -1,1 +1,1 @@
-web: gunicorn piggybank.wsgi:application
+web: gunicorn piggy-bank.wsgi:application
