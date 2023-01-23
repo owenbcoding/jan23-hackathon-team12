@@ -187,6 +187,7 @@ The Contact Us page invites the user to get in touch with Piggy Bank by filling 
 
 The About the Team page shows a picture of the six team members, their names and icons that link to their professional pages (GitHub and LinkedIn).
 
+
 <img src="./media/team-desktop.png" alt="Contact Us wireframe for desktop">
 
 The user's dashboard page will show the account information for that user, as an indivitual or as a group (family / corporate user) and lists the categories of savings. Clicking the 'create new wallet' button will allow the user to create their wallet.
@@ -195,16 +196,116 @@ The user's dashboard page will show the account information for that user, as an
 ​
 </details>
 
-## Deployment
-<< detail deployment methods used here, and any extraneous circumstances to run the project locally >>
-​
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Hover.css:](https://ianlunn.github.io/Hover/)
+    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used to create the logo, resizing images and editing photos for the website.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+
 ## Testing
-<< detail testing logs here - any known bugs, and squashed bugs 🐛🐛 >>
-​
+
+### Manual Testing 
+
+- We underwent manual testing by creating fake users to test our product for all crud functionality.
+
+### Known Bugs: 
+
+- We had an account app and we had to rename it because we used allauth, which already has an account app. Therefore, the bug was that we had two apps with the same name. 
+    - To fix it, we renamed the account app "Piggyaccount" and reset the migrations. Specifically, we made a separate migration for the renamed app. 
+    - We also created a form to check if we can use the piggy bank models.
+
+## Deployment
+
+### Elephant SQL and Heroku
+
+The project was deployed on Heroku using the following steps...
+
+1. Firstly, we created an elephant SQL team, invited all members there on their platform and gave them access to see the SQL database. 
+    * As members, we made sure the project could run locally from each team member's gitpod first by installing django with tailwind and showing the team how to run it. 
+2. Following this, each team member made their individual branches for developing the project. The projecct would then be developed until it was at a stage each team member was satisfied with, before being pushed to the main branch. 
+3. Towards the end of the project, each team member then set up their configuration variables for the staging part of the deployment in the env.py file. This allowed the team to connect it to heroku which was created in Owen's account.
+4. Finally, we tested everything on the staging branch before deploying the main branch for the project to be hosted on Heroku. 
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account. 
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+
 ## Credits
 
 ### Code
+
 << any and all code that isn't yours...must go here >>
+
+- We used this code to assist in Django documentation
+    - https://docs.djangoproject.com/en/3.2/
+
+- We used the following code to assist us with allauth and allauth 2fa documentation
+    - https://django-allauth.readthedocs.io/en/latest/installation.html   
+    - https://django-allauth-2fa.readthedocs.io/en/latest/installation/
+
+- The following video regarding Django rest API helped inspire our use of API
+    - https://www.youtube.com/watch?v=cJveiktaOSQ
+
+- We used this video during the initial creation and brainstorming of the app
+    - https://www.youtube.com/watch?v=SrT9Wf_OFyw
+
+- We used this to gain inspiration for our initial Github repository
+    - https://github.com/somacode1/Build-a-Banking-System-API-with-DJANGO-Rest-Framework  
+
+- Stack Overflow assisted in solving the bug of not rendering the profile page
+    - https://stackoverflow.com/questions/33724344/how-can-i-display-a-user-profile-using-django
+
+- We used this video that helped install 2fa without allauth   
+    - https://tuts-station.com/django-two-factor-authentication-example.html
 ​
 ### Content
 To get an idea of pertinent User Stories for a savings app, we started by using a list of examples for the [UX on a mobile app](https://propelrr.com/blog/user-story-examples-fintech-apps#). From there we brainstormed other ways to improve the user experience and the Piggy Bank application itself.
