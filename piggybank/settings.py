@@ -10,7 +10,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 NPM_BIN_PATH = '/home/gitpod/.nvm/versions/node/v16.13.0/bin/npm'
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -117,7 +116,7 @@ SETUP_SUCCESS_URL = getattr(
 )
 
 
-WSGI_APPLICATION = 'piggybank.wsgi.application'
+WSGI_APPLICATION = 'piggy-bank.wsgi.application'
 
 
 AUTHENTICATION_BACKENDS = [
