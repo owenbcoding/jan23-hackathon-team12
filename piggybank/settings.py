@@ -15,7 +15,7 @@ NPM_BIN_PATH = '/home/gitpod/.nvm/versions/node/v16.13.0/bin/npm'
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1yu+4-7yj3ieek*gnas6b1%pc^_pzv=qsy_7i+6$25-le!e$0f'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
