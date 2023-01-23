@@ -26,7 +26,7 @@ NPM_BIN_PATH = '/home/gitpod/.nvm/versions/node/v16.13.0/bin/npm'
 SECRET_KEY = 'django-insecure-1yu+4-7yj3ieek*gnas6b1%pc^_pzv=qsy_7i+6$25-le!e$0f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
